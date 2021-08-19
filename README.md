@@ -21,7 +21,7 @@ No variant specified, falling back to release
 
 ## Prerequisites
 * **An intel Macintosh computer** running a clean installation of macOS 11 (Big Sur). VirtualBox will not run on Apple Silicon hardware (i.e. the M1 series of machines).
-* **An admin account on the machine**. Administrator access is required for the installation and you will be prompted for the administrator password in several steps.
+* **An admin account on the machine**. Administrator access is required for the installation and you will be prompted for the administrator password in several steps. You should login as this user.
 
 ## Download the software
 VirtualBox can be downloaded from <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>. 
@@ -53,14 +53,18 @@ Ensure that you have selected App Store and identified developers as shown below
 ![](secpriv.png)
 
 ## Run the installer
-Leave the Security & Privacy pane open. Double click VirtualBox.pkg to begin the installation. Unless you absolutely know what you are doing it best to accept all the defaults.
+Leave the Security & Privacy pane open. Double click **VirtualBox.pkg** to begin the installation. Unless you absolutely know what you are doing it best to accept all the defaults.
 
 Enter your password when asked.
+
+If the install finished with no errors then you probably have a successful installation. 
+
+You may receive a popup window asking you to confirm the installation of the kext bundles, in which case your next step will be to take action in the Security & Privacy window
 
 ### Successful installation
 If the installation proceeds to a successful conclusion with no additional popups or errors, you have finished. This may be the case if you have previously allowed Oracle to install the kext bundles. It is a very good idea to reboot your machine before attempting to run VirtualBox.
 
-### Action required in Security & Preferences
+### Action required in Security & Privacy
 You may receive a popup window asking you to confirm the installation of the kext bundles. 
 
 Navigate to your Security & Privacy window and allow Oracle to install the software. Do not restart your machine at this point, even though you will be prompted to do this. 

@@ -1,13 +1,13 @@
 # Install VirtualBox on Big Sur (macos 11)
-VirtualBox relies on installing kernel drivers (kext bundles) in order to function. Unfortunately Apple are not very keen on developers doing this have made it difficult for any 3rd party (i.e. Oracle) to install these device drivers. Installation of the drivers can fail unexpectedly if the necessary permissions are not granted by the user (you). I have found the following sequence works for me most of the time. If it fails I repeat the steps which include removal of old or failed VirtualBox installations.
+VirtualBox relies on installing kernel drivers (kext bundles) in order to function. Unfortunately, Apple are not very keen on developers doing this and have made it difficult for any 3rd party (i.e. Oracle) to install these device drivers. Installation of the drivers can fail unexpectedly if the necessary permissions are not granted by the user (you). I have found the following sequence works for me most of the time. If it fails I repeat the steps which include removal of old or failed VirtualBox installations.
 
-There seem to many internet guides saying to disable System Integrity Protection (SIP). This should **NEVER** be required to install VirtualBox. If you have disabled SIP in the past then my reccommendation is to re-enable it before proceding further. If you have changed permissions on files (as a result of following some guide you found on the internet) possibly the best solution is to re-install macOS.
+There seem to be many internet guides saying to disable System Integrity Protection (SIP). This should **NEVER** be required to install VirtualBox. If you have disabled SIP in the past then my reccommendation is to re-enable it before going any further. If you have changed permissions on files (as a result of following some guide you found on the internet) possibly the best solution is to re-install macOS.
 
 VirtualBox works on a clean installation of macOS. If the installation has been tampered with, then all bets are off.
 
 Also, be aware that other software also installs device drivers that may compete with VirtualBox for resources and cause crashes as a result. An example is the intel Power Gadget. You should remove this if you have it installed but also want to run VirtualBox.
 
-The **kmutil** command may help identify any conflicting kext bundles that you have installed. In this example, only kexts provide by VirtualBox are installed.
+The **kmutil** command may help identify any conflicting kext bundles that you have installed. In this example, only kexts provided by VirtualBox are installed.
 <pre>
 <code>
 user@machine ~ % /usr/bin/kmutil showloaded --list-only|grep -v apple
@@ -53,7 +53,7 @@ Ensure that you have selected App Store and identified developers as shown below
 ![](secpriv.png)
 
 ## Run the installer
-Leave the Security & Privacy pane open. Double click **VirtualBox.pkg** to begin the installation. Unless you absolutely know what you are doing it best to accept all the defaults.
+Leave the Security & Privacy pane open. Double click **VirtualBox.pkg** to begin the installation. Unless you absolutely know what you are doing it is best to accept all the defaults.
 
 Enter your password when asked.
 
@@ -74,13 +74,13 @@ Go back to the VirtualBox installer window and complete the installation.
 You should then restart your machine using the Security & Privacy popup window button.
 
 ## Install the Oracle VirtualBox Extensions Pack
-The Extension Pack is released in lock-step with the VirtualBox installer. The versions *must* match.
+The Extension Pack is released in lock-step with the VirtualBox installer. The versions of the Extension Pack and the VirtualBox release *must* match.
 
-You only need install the Extension Pack if your VM uses features that they provide. To install the the software, double click the file you downloaded. This will start the VirtualBox Manager which will prompt you to complete the installation.
+You only need to install the Extension Pack if your VM uses features that they provide. To install the software, double click the file you downloaded. This will start the VirtualBox Manager which will prompt you to complete the installation.
 
 ## Disclaimer
 This procedure works for me on an iMac 18,3 (2017). You may encounter difficulties and if you do: 
 
 * Did you follow these instructions or make your own assumptions?
-* Have you enabled SIP?
+* Have you enabled SIP? SIP is enabled by default so if you have never modified the setting there is nothing to do here.
 * Please post any questions/errors/difficulties to the VirtualBox forum: [VirtualBox on Mac OS X Hosts](https://forums.virtualbox.org/viewforum.php?f=8&sid=5c1a1b45aa48f63b76fcee8b24e124d5)

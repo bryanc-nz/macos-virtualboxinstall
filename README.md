@@ -68,12 +68,13 @@ If the installation proceeds to a successful conclusion with no additional popup
 You may receive a popup window asking you to confirm the installation of the kext bundles. 
 
 Navigate to your Security & Privacy window and allow Oracle to install the software. Do not restart your machine at this point, even though you will be prompted to do this. 
+![](alloworacle.png)
 
 Go back to the VirtualBox installer window and complete the installation. 
 
 You should then restart your machine using the Security & Privacy popup window button.
 
-## Install the Oracle VirtualBox Extensions Pack
+## Install the Oracle VirtualBox Extension Pack
 The Extension Pack is released in lock-step with the VirtualBox installer. The versions of the Extension Pack and the VirtualBox release *must* match.
 
 You only need to install the Extension Pack if your VM uses features that they provide. To install the software, double click the file you downloaded. This will start the VirtualBox Manager which will prompt you to complete the installation.

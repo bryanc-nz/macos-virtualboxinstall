@@ -1,4 +1,4 @@
-# Install VirtualBox on Big Sur (macos 11)
+# Install VirtualBox on Big Sur (macOS 11)
 VirtualBox relies on installing kernel drivers (kext bundles) in order to function. Unfortunately, Apple are not very keen on developers doing this and have made it difficult for any 3rd party (i.e. Oracle) to install these device drivers. Installation of the drivers can fail unexpectedly if the necessary permissions are not granted by the user (you). I have found the following sequence works for me most of the time. If it fails I repeat the steps which include removal of old or failed VirtualBox installations.
 
 There seem to be many internet guides saying to disable System Integrity Protection (SIP). This should **NEVER** be required to install VirtualBox. If you have disabled SIP in the past then my reccommendation is to re-enable it before going any further. If you have changed permissions on files (as a result of following some guide you found on the internet) possibly the best solution is to re-install macOS.

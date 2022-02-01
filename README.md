@@ -40,8 +40,8 @@ Double click the installer .dmg file to open it. You will see a window similar t
 2. Reply to any confirmation requests and enter your password when asked.
 3. It may help to manually remove any previously failed kext installations using  
 <code>
-sudo kmutil clear-staging 
-</code>  
+sudo kmutil clear-staging
+</code><br/>
 4. It does not hurt to reboot your machine, but it is not absolutely required.
 
 ## Open System Preferences -> Security & Privacy

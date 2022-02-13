@@ -7,7 +7,7 @@ VirtualBox works on a clean installation of macOS. If the installation has been 
 
 Also, be aware that other software also installs device drivers that may compete with VirtualBox for resources and cause crashes as a result. An example is the intel Power Gadget. You should remove this if you have it installed but also want to run VirtualBox.
 
-The **kmutil** command may help identify any conflicting kext bundles that you have installed. In this example, only kexts provided by VirtualBox are installed.
+The **kmutil** command may help identify any conflicting kext bundles that you have installed. In this example, only kexts provided by VirtualBox are installed. All other 3rd party kexts have been uninstalled.
 <pre>
 <code>
 user@machine ~ % /usr/bin/kmutil showloaded --list-only|grep -v apple
